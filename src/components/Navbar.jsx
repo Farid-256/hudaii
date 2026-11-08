@@ -43,7 +43,7 @@ const Navbar = () => {
                     <Link className={`text-lg font-medium transition-colors hover:text-blue-600 ${pathName === '/myProfile' ? 'text-blue-800 font-bold' : 'text-gray-600'}`} href={'/myProfile'}>My Profile</Link>
 
                     <div>
-                        <Link className="bg-blue-800 text-lg text-white px-8 py-2 rounded-md transition-all cursor-pointer hover:bg-amber-400 hover:text-blue-800" href={`/login`}>Login</Link>
+                        <Link className="bg-blue-800 text-lg text-white px-8 py-2 rounded-md transition-all cursor-pointer hover:bg-amber-400 hover:text-blue-800" href={`/auth/login`}>Login</Link>
                     </div>
                 </nav>
 
@@ -67,7 +67,7 @@ const Navbar = () => {
                     <Link onClick={handleManuClose} className={`text-lg font-medium ${pathName === '/myProfile' ? 'text-blue-800 font-bold' : 'text-gray-600'}`} href={'/myProfile'}>My Profile</Link>
 
                     <div className="pt-2 border-t border-amber-200">
-                        <Link onClick={handleManuClose} className="block text-center bg-blue-800 text-lg text-white px-8 py-2 rounded-md transition-all cursor-pointer hover:bg-amber-400 hover:text-blue-800" href={`/login`}>Login</Link>
+                        <Link onClick={handleManuClose} className="block text-center bg-blue-800 text-lg text-white px-8 py-2 rounded-md transition-all cursor-pointer hover:bg-amber-400 hover:text-blue-800" href={`/auth/login`}>Login</Link>
                     </div>
                 </div>
             </div>
