@@ -19,7 +19,7 @@ const Register = () =>{
         const {data, error} = await authClient.signUp.email({
             name: userData.name,
             email: userData.email,
-            password: userData.password
+            password: userData.password,
         })
 
         if(error){

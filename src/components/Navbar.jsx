@@ -49,7 +49,7 @@ const Navbar = () => {
 
                     <Link className={`text-lg font-medium transition-colors hover:text-blue-600 ${pathName === '/friends' ? 'text-blue-800 font-bold' : 'text-gray-600'}`} href={'/friends'}>Friends</Link>
 
-                    <Link className={`text-lg font-medium transition-colors hover:text-blue-600 ${pathName === '/myProfile' ? 'text-blue-800 font-bold' : 'text-gray-600'}`} href={'/myProfile'}>My Profile</Link>
+                    <Link className={`text-lg font-medium transition-colors hover:text-blue-600 ${pathName === '/dashboard' ? 'text-blue-800 font-bold' : 'text-gray-600'}`} href={'/dashboard/user'}>My Profile</Link>
 
                     {
                         user ? <div>
@@ -77,13 +77,15 @@ const Navbar = () => {
 
                     <Link onClick={handleManuClose} className={`text-lg font-medium ${pathName === '/friends' ? 'text-blue-800 font-bold' : 'text-gray-600'}`} href={'/friends'}>Friends</Link>
 
-                    <Link onClick={handleManuClose} className={`text-lg font-medium ${pathName === '/myProfile' ? 'text-blue-800 font-bold' : 'text-gray-600'}`} href={'/myProfile'}>My Profile</Link>
+                    <Link onClick={handleManuClose} className={`text-lg font-medium ${pathName === '/dashboard/user' ? 'text-blue-800 font-bold' : 'text-gray-600'}`} href={'/dashboard'}>My Profile</Link>
 
                     {
                         user ? <div className="pt-2 border-t border-amber-200">
                             <button onClick={ ()=> {handleLogout(), handleManuClose()}}  className="block text-center w-full bg-blue-800 text-lg text-white px-8 py-2 rounded-md transition-all cursor-pointer hover:bg-amber-400 hover:text-blue-800">Logout</button>
+
                         </div> : <div className="pt-2 border-t border-amber-200">
-                            <Link href={'/auth/login'} onClick={handleManuClose} className="block text-center w-full bg-blue-800 text-lg text-white px-8 py-2 rounded-md transition-all cursor-pointer hover:bg-amber-400 hover:text-blue-800">Login</Link>
+                            <Link href={'/auth/login'} onClick={handleManuClose} className="block text-center w-full bg-blue-800 text-lg text-white px-8 py-2 rounded-md transition-all cursor-pointer hover:bg-amber-400 hover:text-blue-800">
+                            Login</Link>
                         </div>
                     }
                 </div>
