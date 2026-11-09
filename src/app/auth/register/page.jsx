@@ -101,7 +101,7 @@ const Register = () =>{
                     {/* Submit Button */}
                     <button
                         type="submit"
-                        className={'w-full bg-blue-800 py-2.5 px-4 text-white font-semibold rounded-lg transition-all duration-200'}
+                        className={'w-full bg-blue-800 py-2.5 px-4 text-white font-semibold rounded-lg transition-all duration-200 cursor-pointer'}
                     > Register
                     </button>
                 </form>
@@ -109,7 +109,7 @@ const Register = () =>{
                 {/* Footer Link */}
                 <p className="text-center text-sm text-gray-600 mt-6">
                     Already have an account?{' '}
-                    <Link href="/login" className="text-blue-600 font-semibold hover:underline">
+                    <Link href="/auth/login" className="text-blue-600 font-semibold hover:underline">
                         Login
                     </Link>
                 </p>
