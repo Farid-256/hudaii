@@ -26,7 +26,7 @@ const DashboardRedirect = () => {
     }, [isPending, router, userData])
     return (
         <div>
-            <h3>Redirecting...</h3>
+            <h3 className="text-5xl text-blue-800 text-center">Loading...</h3>
         </div>
     );
 };
